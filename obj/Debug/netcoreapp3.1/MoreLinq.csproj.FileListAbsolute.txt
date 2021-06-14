@@ -1,0 +1,13 @@
+E:\Projects\VsProjects\MoreLinq\bin\Debug\netcoreapp3.1\MoreLinq.exe
+E:\Projects\VsProjects\MoreLinq\bin\Debug\netcoreapp3.1\MoreLinq.deps.json
+E:\Projects\VsProjects\MoreLinq\bin\Debug\netcoreapp3.1\MoreLinq.runtimeconfig.json
+E:\Projects\VsProjects\MoreLinq\bin\Debug\netcoreapp3.1\MoreLinq.runtimeconfig.dev.json
+E:\Projects\VsProjects\MoreLinq\bin\Debug\netcoreapp3.1\MoreLinq.dll
+E:\Projects\VsProjects\MoreLinq\bin\Debug\netcoreapp3.1\MoreLinq.pdb
+E:\Projects\VsProjects\MoreLinq\obj\Debug\netcoreapp3.1\MoreLinq.csprojAssemblyReference.cache
+E:\Projects\VsProjects\MoreLinq\obj\Debug\netcoreapp3.1\MoreLinq.AssemblyInfoInputs.cache
+E:\Projects\VsProjects\MoreLinq\obj\Debug\netcoreapp3.1\MoreLinq.AssemblyInfo.cs
+E:\Projects\VsProjects\MoreLinq\obj\Debug\netcoreapp3.1\MoreLinq.csproj.CoreCompileInputs.cache
+E:\Projects\VsProjects\MoreLinq\obj\Debug\netcoreapp3.1\MoreLinq.dll
+E:\Projects\VsProjects\MoreLinq\obj\Debug\netcoreapp3.1\MoreLinq.pdb
+E:\Projects\VsProjects\MoreLinq\obj\Debug\netcoreapp3.1\MoreLinq.genruntimeconfig.cache

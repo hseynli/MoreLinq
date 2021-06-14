@@ -1,0 +1,16 @@
+E:\Projects\VsProjects\MoreLinq\bin\Debug\netcoreapp3.1\MoreLinqExamples.exe
+E:\Projects\VsProjects\MoreLinq\bin\Debug\netcoreapp3.1\MoreLinqExamples.deps.json
+E:\Projects\VsProjects\MoreLinq\bin\Debug\netcoreapp3.1\MoreLinqExamples.runtimeconfig.json
+E:\Projects\VsProjects\MoreLinq\bin\Debug\netcoreapp3.1\MoreLinqExamples.runtimeconfig.dev.json
+E:\Projects\VsProjects\MoreLinq\bin\Debug\netcoreapp3.1\MoreLinqExamples.dll
+E:\Projects\VsProjects\MoreLinq\bin\Debug\netcoreapp3.1\MoreLinqExamples.pdb
+E:\Projects\VsProjects\MoreLinq\bin\Debug\netcoreapp3.1\Bogus.dll
+E:\Projects\VsProjects\MoreLinq\bin\Debug\netcoreapp3.1\MoreLinq.dll
+E:\Projects\VsProjects\MoreLinq\obj\Debug\netcoreapp3.1\MoreLinqExamples.csprojAssemblyReference.cache
+E:\Projects\VsProjects\MoreLinq\obj\Debug\netcoreapp3.1\MoreLinqExamples.AssemblyInfoInputs.cache
+E:\Projects\VsProjects\MoreLinq\obj\Debug\netcoreapp3.1\MoreLinqExamples.AssemblyInfo.cs
+E:\Projects\VsProjects\MoreLinq\obj\Debug\netcoreapp3.1\MoreLinqExamples.csproj.CoreCompileInputs.cache
+E:\Projects\VsProjects\MoreLinq\obj\Debug\netcoreapp3.1\MoreLinqExamples.csproj.CopyComplete
+E:\Projects\VsProjects\MoreLinq\obj\Debug\netcoreapp3.1\MoreLinqExamples.dll
+E:\Projects\VsProjects\MoreLinq\obj\Debug\netcoreapp3.1\MoreLinqExamples.pdb
+E:\Projects\VsProjects\MoreLinq\obj\Debug\netcoreapp3.1\MoreLinqExamples.genruntimeconfig.cache

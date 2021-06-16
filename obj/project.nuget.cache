@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "ZMNGO6qO2P7h26b3smo07a8mffK8dlXv7IOMVZ46KvYI38HOWLJ0Q/hb7krQkTdlCci7V6gV+mfmlDj99faHRw==",
+  "dgSpecHash": "evFEaBzVS11d5jfaX13nmo0ZY5DFeMlzY4pWsvPmkbQgAl1ivr0a8qH/AoX55ol8A0j8rx2skm9AavIm6gJ4OA==",
   "success": true,
-  "projectFilePath": "E:\\Projects\\VsProjects\\MoreLinq\\MoreLinqExamples.csproj",
+  "projectFilePath": "D:\\VS Projects\\MoreLinq\\MoreLinqExamples.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Farid Guseynli\\.nuget\\packages\\bogus\\33.0.2\\bogus.33.0.2.nupkg.sha512",
-    "C:\\Users\\Farid Guseynli\\.nuget\\packages\\morelinq\\3.3.2\\morelinq.3.3.2.nupkg.sha512"
+    "C:\\Users\\fchuseynli\\.nuget\\packages\\bogus\\33.0.2\\bogus.33.0.2.nupkg.sha512",
+    "C:\\Users\\fchuseynli\\.nuget\\packages\\morelinq\\3.3.2\\morelinq.3.3.2.nupkg.sha512"
   ],
   "logs": []
 }

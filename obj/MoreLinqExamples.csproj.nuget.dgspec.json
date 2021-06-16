@@ -1,36 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Projects\\VsProjects\\MoreLinq\\MoreLinqExamples.csproj": {}
+    "D:\\VS Projects\\MoreLinq\\MoreLinqExamples.csproj": {}
   },
   "projects": {
-    "E:\\Projects\\VsProjects\\MoreLinq\\MoreLinqExamples.csproj": {
+    "D:\\VS Projects\\MoreLinq\\MoreLinqExamples.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projects\\VsProjects\\MoreLinq\\MoreLinqExamples.csproj",
+        "projectUniqueName": "D:\\VS Projects\\MoreLinq\\MoreLinqExamples.csproj",
         "projectName": "MoreLinqExamples",
-        "projectPath": "E:\\Projects\\VsProjects\\MoreLinq\\MoreLinqExamples.csproj",
-        "packagesPath": "C:\\Users\\Farid Guseynli\\.nuget\\packages\\",
-        "outputPath": "E:\\Projects\\VsProjects\\MoreLinq\\obj\\",
+        "projectPath": "D:\\VS Projects\\MoreLinq\\MoreLinqExamples.csproj",
+        "packagesPath": "C:\\Users\\fchuseynli\\.nuget\\packages\\",
+        "outputPath": "D:\\VS Projects\\MoreLinq\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Farid Guseynli\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\fchuseynli\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.org/api/v2": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {

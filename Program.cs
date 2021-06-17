@@ -5,6 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using MoreLinqExamples;
+using System.Data;
 
 namespace MoreLinq
 {
@@ -94,9 +95,69 @@ namespace MoreLinq
                     //Massivləri birləşdirməyə imkan verir. Hansı massivin ölçüsü ən azdırsa, ona uyğun birşləşmə gedəcək.
                     implementator.ImplementZipShortest();
                     break;
+                case "Exclude":
+                    //Massivin n-ci elementindən başalayaraq n sayda element xaric etməyə imkan verir.
+                    implementator.ImplementExclude();
+                    break;
+                case "FallbackIfEmpty":
+                    //Əgər şərtə uyğun məlumat tapılmasa, onda nəticəni default qiymətə mənimsətmək olar.
+                    implementator.ImplementFallbackIfEmpty();
+                    break;
+                case "Generate":
+                    //Şərtə uyğun random ədələr generasiya edir.
+                    implementator.ImplementGenerate();
+                    break;
+                case "Index":
+                    //*Ardıcıllığa indeks əlavə edir
+                    implementator.ImplementIndex();
+                    break;
+                case "MaxByMinBy":
+                    //Verilmiş şərtə uyğun ən kiçik və ən böyük elementləri tapır. LINQ-də olan Min və Max metodlarından fərqli olaraq kolleksiya qayatarır.
+                    implementator.ImplementMaxByAndMinBy();
+                    break;
+                case "PadAndPadStart":
+                    //Hər-hansı kolleksiyanın sonuna və yə qabağına elementlər əlavə etməyə imkan verir.
+                    implementator.ImplementPadAndPadStart();
+                    break;
+                case "PartialSort":
+                    //Hər-hansı kolleksiyanın sort etməyə və sortdan sonra n sayda element götürmək üçün istifadə olunur.
+                    implementator.ImplementPartialSort();
+                    break;
+                case "Partition":
+                    //Hər-hansı kolleksiyanı iki hissəyə bölür, bir hissədə true olanlar, digər hissədə isə false olanlar yerləşir.
+                    implementator.ImplementPartition();
+                    break;
+                case "RandomSubset":
+                    //Hər-hansı kolleksiyadan n sayda təsadüfi olaraq element götürür.
+                    implementator.ImplementRandomSubset();
+                    break;
+                case "Shuffle":
+                    //Hər-hansı kolleksiyadan təsadüfi şəkildə qarışdırır.
+                    implementator.ImplementShuffle();
+                    break;
+                case "Sequence":
+                    //n addım əsasında ardıcıllıq yaradır.
+                    implementator.ImplementSequence();
+                    break;
+                case "ToDelimitedString":
+                    //Kolleksiyanı verilən ayırıcı əsasında string-ə çevirir.
+                    implementator.ImplementToDelimitedString();
+                    break;
+                case "ToDataTable":
+                    //Kolleksiyanı DataTable-ə çevirir.
+                    implementator.ImplementToDataTable();
+                    break;
+                case "TakeEvery":
+                    //Hər n addımdan bir elementləri götürür.
+                    implementator.ImplementTakeEvery();
+                    break;
+                case "TakeLast":
+                    //Sonuncu n elementi götürür.
+                    implementator.ImplementTakeLast();
+                    break;
 
                 case "":
-                    implementator.Implement_();
+                    implementator.Implement();
                     break;
             }
 
@@ -251,13 +312,157 @@ namespace MoreLinq
             Console.WriteLine(zipped.ToDelimitedString(","));
         }
 
+        public void ImplementExclude()
+        {
+            var numbers = new[] { 123, 456, 789, 1, 2, 3, 40, 77 };
+            IEnumerable<int> result = numbers.Exclude(0, 4);
+
+            Console.WriteLine(result.ToDelimitedString(","));
+        }
+
+        public void ImplementFallbackIfEmpty()
+        {
+            var numbers = new[] { 123, 456, 789 };
+            var result = numbers.Where(x => x == 100).FallbackIfEmpty(666).Single();
+
+            Console.WriteLine(result);
+        }
+
+        public void ImplementGenerate()
+        {
+            IEnumerable<long> result = MoreEnumerable.Generate<long>(2, n => n + n).Take(10);
+
+            Console.WriteLine(result.ToDelimitedString(","));
+        }
+
+        public void ImplementIndex()
+        {
+            string[] fruits = { "apple", "banana", "orange", "cheryy", "papaya", "apricot" };
+
+            var result = fruits.Index();
+
+            Console.WriteLine(result.ToDelimitedString(","));
+        }
+
+        public void ImplementMaxByAndMinBy()
+        {
+            string[] fruits = { "apple", "banana", "orange", "cheryy", "papaya", "apricot", "apricot", "armud" };
+
+            var result = fruits.MaxBy(p => p.Length);
+            var result2 = fruits.MinBy(p => p.Length);
+
+            Console.WriteLine(result.ToDelimitedString(","));
+            Console.WriteLine(result2.ToDelimitedString(","));
+        }
+
+        public void ImplementPadAndPadStart()
+        {
+            int[] numbers = { 123, 456, 789 };
+
+            var pad = numbers.Pad(5);
+            var padStart = numbers.PadStart(5);
+
+            Console.WriteLine(pad.ToDelimitedString(","));
+            Console.WriteLine(padStart.ToDelimitedString(","));
+        }
+
+        public void ImplementPartialSort()
+        {
+            string[] fruits = { "apple", "banana", "orange", "cheryy", "papaya", "apricot", "apricot", "armud" };
+
+            var result = fruits.PartialSort(fruits.Where(p => p.StartsWith("a")).Count());
+
+            Console.WriteLine(result.ToDelimitedString(","));
+        }
+
+        public void ImplementPartition()
+        {
+            var (evens, odds) = Enumerable.Range(0, 10).Partition(x => x % 2 == 0);
+
+            Console.WriteLine(evens.ToDelimitedString(","));
+            Console.WriteLine(odds.ToDelimitedString(","));
+        }
+
+        public void ImplementRandomSubset()
+        {
+            int[] values = { 1, 2, 3, 4, 5, 6, 7, 8 };
+
+            var result = values.RandomSubset(2);
+
+            Console.WriteLine(result.ToDelimitedString(","));
+        }
+
+        public void ImplementShuffle()
+        {
+            string[] fruits = { "apple", "banana", "orange", "cheryy", "papaya", "apricot", "apricot", "armud" };
+
+            var result = fruits.Take(5).Shuffle();
+
+            Console.WriteLine(result.ToDelimitedString(","));
+        }
+
+        public void ImplementSequence()
+        {
+            var result = MoreEnumerable.Sequence(0, 10, 3);
+
+            Console.WriteLine(result.ToDelimitedString(","));
+        }
+
+        public void ImplementToDelimitedString()
+        {
+            string[] fruits = { "apple", "banana", "orange", "cheryy", "papaya", "apricot", "blueberry", "apricot", "armud" };
+
+            Console.WriteLine(fruits.ToDelimitedString(","));
+        }
+
+        public void ImplementToDataTable()
+        {
+            List<Person> people = RandData.GetRandomPeople("en");
+
+            DataTable table = people.ToDataTable();
+
+            for (int i = 0; i < table.Rows.Count; i++)
+            {
+                for (int j = 0; j < table.Columns.Count; j++)
+                {
+                    Console.Write(table.Rows[i][j] + ",");
+                }
+                Console.WriteLine();
+            }
+        }
+
+        public void ImplementTakeEvery()
+        {
+            string[] fruits = { "apple", "banana", "orange", "cheryy", "papaya", "apricot", "apricot", "armud" };
+
+            string[] result = fruits.TakeEvery(2).ToArray();
+
+            Console.WriteLine(result.ToDelimitedString(","));
+        }
+
+        public void ImplementTakeLast()
+        {
+            string[] fruits = { "apple", "banana", "orange", "cheryy", "papaya", "apricot", "apricot", "armud" };
+
+            var result = fruits.TakeLast(2);
+
+            Console.WriteLine(result.ToDelimitedString(","));
+        }
+
+        public void Implement()
+        {
+            string[] fruits = { "apple", "banana", "orange", "cheryy", "papaya", "apricot", "apricot", "armud" };
+
+            var result = fruits.PartialSort(fruits.Where(p => p.StartsWith("a")).Count());
+
+            Console.WriteLine(result.ToDelimitedString(","));
+        }
+
         public void Implement_()
         {
-            int[] numbers = new[] { 1, 2, 3, 4 };
-            string[] letters = new[] { "A", "B", "C", "D" };
-            //var result = numbers.EquiZip(letters, (n, l) => (n, l));
+            string[] fruits = { "apple", "banana", "orange", "cheryy", "papaya", "apricot", "apricot", "armud" };
 
-            IEnumerable<string> result = numbers.EquiZip(letters, (n, l) => n + "!" + l);
+            var result = fruits.PartialSort(fruits.Where(p => p.StartsWith("a")).Count());
 
             Console.WriteLine(result.ToDelimitedString(","));
         }
